@@ -5,6 +5,7 @@ import Todo from "./Todo";
 import db from './Firebase'
 import firebase from "firebase";
 
+
 // firebase
 // React
 // TODO app
@@ -54,7 +55,7 @@ function App() {
 
             <ul>
                 {todos.map(todo => (
-                    <Todo todo={todo.todo} id={todo.id}/>
+                    <Todo key={todo.id} todo={todo.todo} id={todo.id}/>
                 ))}
             </ul>
         </div>
